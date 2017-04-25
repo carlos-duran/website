@@ -1,0 +1,65 @@
+{% extends "layout.twig" %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+  <div class="uk-section-small">
+    <div class="uk-container uk-container-small">
+      <h1>Contact</h1>
+
+      <form method="post" action="/contacto" role="form">
+        <div class="uk-margin">
+          <label for="name">Name</label>
+          <input type="text" name="name" class="uk-input">
+        </div>
+
+        <div class="uk-margin">
+          <label for="message">Message</label>
+          <textarea name="message" class="uk-textarea"></textarea>
+        </div>
+
+        <div class="uk-margin">
+          <input type="submit" class="uk-button uk-button-primary">
+        </div>
+      </form>
+
+
+      <h2>Contactos</h2>
+
+      {% if contacts|length > 0 %}
+        <table class="uk-table uk-table-divider">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Mensaje</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            {% for contact in contacts %}
+
+            <tr>
+
+              <td>
+                {{ contact.name }}
+              </td>
+
+              <td>
+                {{ contact.message }}
+              </td>
+            </tr>
+
+            {% endfor %}
+
+          </tbody>
+        </table>
+      {% else %}
+        <p>
+          No se encontró ningún contacto.
+        </p>
+      {% endif %}
+
+    </div>
+  </div>
+
+{% endblock %}

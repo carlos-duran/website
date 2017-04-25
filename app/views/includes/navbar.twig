@@ -1,0 +1,28 @@
+{%
+  set pages = [
+    ['/', 'Inicio'],
+    ['/contacto', 'Contacto']
+  ]
+%}
+
+<div class="uk-background-primary uk-light">
+  <div class="uk-container">
+    <nav uk-navbar>
+
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="/">Website</a>
+      </div>
+
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          {% for item in pages %}
+            <li {% if item[0] == path %} class="uk-active" {% endif %} >
+              <a href="{{ item[0] }}"> {{ item[1] }} </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+</div>

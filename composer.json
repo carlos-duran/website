@@ -1,0 +1,22 @@
+{
+    "name": "website",
+    "description": "Automated environment for website development.",
+    "type": "project",
+    "require": {
+        "leocavalcante/siler": "dev-master",
+        "twig/twig": "^2.3",
+        "gabordemooij/redbean": "dev-master",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "require-dev": {
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Duran",
+            "email": "carlosduran.xyz@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "scripts": {}
+}
