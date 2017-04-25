@@ -9,7 +9,7 @@ Ambiente automatizado para el desarrollo de sitios web.
 Clonamos, entramos a la carpeta, eliminamos la carpeta .git e instalamos las dependencias.
 ```
 git clone https://github.com/carlos-duran/website
-cd site-boilerplate && rm -rf .git
+cd website && rm -rf .git
 composer install
 npm install
 ```
