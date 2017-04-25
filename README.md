@@ -26,17 +26,17 @@ como, por ejemplo, el acceso a la base de datos.
 ## Ejecución
 Abrimos dos terminales: una para compilar los assets y la otra para el servidor.
 
-#### Assets
-Modo desarrollo: `npm run dev`.
+#### Compilación de assets
+Modo desarrollo: `npm run dev` (compila solo una vez).
 
-Mientras se modifica: `npm run watch`.
+Modo desarrollo: `npm run watch` (compila cuando se modifican).
 
-Para producción: `npm run production`.
+Para producción: `npm run production` (compila una vez y los optimiza).
 
 #### Servidor
-Servidor PHP: `npm run serve`
+Modo desarrollo: `npm run serve`
 
-Este comando nos creará un servidor corriendo en `http://localhost:8000`
+Este comando nos creará un servidor corriendo en `http://localhost:8000`.
 
 
 ## Tutorial

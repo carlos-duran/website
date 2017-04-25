@@ -5,6 +5,7 @@
 {% block content %}
   <div class="uk-section-small">
     <div class="uk-container uk-container-small">
+      
       <h1>Contact</h1>
 
       <form method="post" action="/contacto" role="form">
@@ -23,40 +24,29 @@
         </div>
       </form>
 
-
       <h2>Contactos</h2>
 
       {% if contacts|length > 0 %}
-        <table class="uk-table uk-table-divider">
-          <thead>
-            <tr>
-              <th>Nombre</th>
-              <th>Mensaje</th>
-            </tr>
-          </thead>
-          <tbody>
-
-            {% for contact in contacts %}
-
-            <tr>
-
-              <td>
-                {{ contact.name }}
-              </td>
-
-              <td>
-                {{ contact.message }}
-              </td>
-            </tr>
-
-            {% endfor %}
-
-          </tbody>
-        </table>
+      <table class="uk-table uk-table-divider">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Mensaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for contact in contacts %}
+          <tr>
+            <td>{{ contact.name }}</td>
+            <td>{{ contact.message }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
       {% else %}
-        <p>
-          No se encontró ningún contacto.
-        </p>
+      <p>
+        No se encontró ningún contacto.
+      </p>
       {% endif %}
 
     </div>

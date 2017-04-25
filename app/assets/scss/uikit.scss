@@ -1,5 +1,8 @@
 // 1. Your custom variables and variable overwrites.
 $global-primary-background: #009688;
+$offcanvas-bar-background: #fff;
+$offcanvas-bar-color-mode: dark;
+
 
 // 2. Import default variables and available mixins.
 @import "../../../node_modules/uikit/src/scss/variables-theme.scss";

@@ -14,13 +14,14 @@
       </div>
 
       <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
+        <ul class="uk-navbar-nav uk-visible@s">
           {% for item in pages %}
             <li {% if item[0] == path %} class="uk-active" {% endif %} >
               <a href="{{ item[0] }}"> {{ item[1] }} </a>
             </li>
           {% endfor %}
         </ul>
+        <a class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon href="#offcanvas" uk-toggle></a>
       </div>
 
     </nav>
