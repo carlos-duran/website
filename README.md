@@ -8,15 +8,15 @@ Ambiente automatizado para el desarrollo de sitios web.
 ## Instalación
 Clonamos, entramos a la carpeta, eliminamos la carpeta .git e instalamos las dependencias.
 ```
-git clone https://github.com/carlos-duran/site-boilerplate.git
+git clone https://github.com/carlos-duran/website
 cd site-boilerplate && rm -rf .git
 composer install
 npm install
 ```
 
 A continuación debemos crear nuestro archivo `.env` para nuestra configuración.
-Simplemente duplicamos el archivo de ejemplo que viene por defecto (`.env.example`)
-y lo renombramos a `.env`.
+Simplemente duplicamos el archivo de ejemplo que viene por defecto (`.env.example`),
+lo renombramos a `.env` y lo abrimos para ingresar los datos de nuestro proyecto.
 
 
 ## Ejecución
