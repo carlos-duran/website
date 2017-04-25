@@ -1,4 +1,4 @@
-# site-boilerplate
+# Website
 Ambiente automatizado para el desarrollo de sitios web.
 
 ## Requisitos
