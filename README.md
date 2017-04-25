@@ -27,8 +27,10 @@ como, por ejemplo, el acceso a la base de datos.
 Abrimos dos terminales: una para compilar los assets y la otra para el servidor.
 
 #### Assets
-Modo desarrollo: `npm run dev`.\n
-Mientras se modifica: `npm run watch`.\n
+Modo desarrollo: `npm run dev`.
+
+Mientras se modifica: `npm run watch`.
+
 Para producción: `npm run production`.
 
 #### Servidor
