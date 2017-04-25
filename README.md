@@ -1,5 +1,7 @@
 # Website
 Ambiente automatizado para el desarrollo de sitios web.
+Basándose en la arquitectura MVC y aprovechando las herramientas novedosas
+que nos trae Node.js
 
 ## Requisitos
 - **PHP 7** y Composer
@@ -22,14 +24,17 @@ lo renombramos a `.env` y lo abrimos para ingresar los datos de nuestro proyecto
 ## Ejecución
 Abrimos dos terminales: una para el servidor y la otra para compilar los assets.
 
-#### Servidor
-Servidor PHP: `npm run serve`
-
 #### Assets
 Modo desarrollo: `npm run dev`.
+
 Mientras se modifica: `npm run watch`.
 
 Para producción: `npm run production`.
+
+#### Servidor
+Servidor PHP: `npm run serve`
+
+Este comando nos creará un servidor corriendo en `http://localhost:8000`
 
 
 ## Tutorial
