@@ -1,7 +1,14 @@
 # Website
 Ambiente automatizado para el desarrollo de sitios web.
-Basándose en la arquitectura MVC y aprovechando las herramientas novedosas
-que nos trae Node.js
+Esta plantilla cuenta con las siguientes características:
+
+* PHP 7 del lado del servidor
+* Base de datos MySQL
+* Arquitectura MVC
+* Preprocesador SASS para los estilos
+* Minificado de CSS y JS
+* Rápido y ligero
+
 
 ## Requisitos
 - **PHP 7** y Composer
@@ -87,3 +94,4 @@ Esta plantilla es posible gracias a:
 * [watch](https://github.com/mikeal/watch)
 * [jquery](https://github.com/jquery/jquery)
 * [uikit](https://github.com/uikit/uikit)
+
