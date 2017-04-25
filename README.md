@@ -15,20 +15,20 @@ cd website && rm -rf .git
 composer install
 npm install
 ```
-
-A continuación debemos crear nuestro archivo `.env` para nuestra configuración.
-Simplemente duplicamos el archivo de ejemplo que viene por defecto (`.env.example`),
-lo renombramos a `.env` y lo abrimos para ingresar los datos de nuestro proyecto.
+A continuación haremos una copia de `.env.example` a `.env`.
+```
+cp .env.example .env
+```
+Luego abrimos este nuevo archivo `.env` para ingresar la información sensible
+como, por ejemplo, el acceso a la base de datos.
 
 
 ## Ejecución
-Abrimos dos terminales: una para el servidor y la otra para compilar los assets.
+Abrimos dos terminales: una para compilar los assets y la otra para el servidor.
 
 #### Assets
-Modo desarrollo: `npm run dev`.
-
-Mientras se modifica: `npm run watch`.
-
+Modo desarrollo: `npm run dev`.\n
+Mientras se modifica: `npm run watch`.\n
 Para producción: `npm run production`.
 
 #### Servidor
