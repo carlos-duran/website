@@ -1,21 +1,21 @@
 {% extends "layout.twig" %}
 
-{% block title %}Contacto{% endblock %}
+{% block title %}Contacto | {{ parent() }}{% endblock %}
 
 {% block content %}
   <div class="uk-section-small">
     <div class="uk-container uk-container-small">
-      
-      <h1>Contact</h1>
+
+      <h1>Contacto</h1>
 
       <form method="post" action="/contacto" role="form">
         <div class="uk-margin">
-          <label for="name">Name</label>
+          <label for="name">Nombre</label>
           <input type="text" name="name" class="uk-input">
         </div>
 
         <div class="uk-margin">
-          <label for="message">Message</label>
+          <label for="message">Mensaje</label>
           <textarea name="message" class="uk-textarea"></textarea>
         </div>
 

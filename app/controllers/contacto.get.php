@@ -1,13 +1,13 @@
 <?php
 
-use Siler\Twig;
+use Siler\{Twig, Http};
 use RedBeanPHP\R;
 
 $contacts = R::findAll('contact');
 
 $model = [
   'contacts' => $contacts,
-  'path' => '/contacto'
+  'path' => Http\path()
 ];
 
 echo Twig\render('contacto.twig', $model);

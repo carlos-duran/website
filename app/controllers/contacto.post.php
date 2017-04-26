@@ -2,8 +2,7 @@
 
 use RedBeanPHP\R;
 use function Siler\Http\Request\post;
-use function Siler\Http\url;
-use function Siler\Http\redirect;
+use function Siler\Http\{url, redirect};
 
 $name = strip_tags(post('name'));
 $message = strip_tags(post('message'));

@@ -1,10 +1,10 @@
 <?php
 
-use Siler\Twig;
+use Siler\{Twig, Http};
 
 $model = [
   'message' => '¡Hola, mundo!',
-  'path' => '/'
+  'path' => Http\path()
 ];
 
 echo Twig\render('index.twig', $model);

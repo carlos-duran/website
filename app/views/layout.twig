@@ -5,15 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/favicon.ico" rel="shortcut icon">
-  <title>{{ block('title') }}</title>
+  <title>{% block title %}Website{% endblock %}</title>
+  {% block meta %}{% endblock %}
   <link rel="stylesheet" href="/css/app.css">
   <script src="/js/app.js"></script>
+  {% block head %}{% endblock %}
 </head>
 <body>
   <div class="uk-offcanvas-content">
-    {{ include('includes/navbar.twig') }}
+    {{ include('includes/navbar.twig', { title: 'Website' }) }}
     {{ include('includes/offcanvas.twig') }}
     {{ block('content') }}
   </div>
+  {% block body %}{% endblock %}
 </body>
 </html>

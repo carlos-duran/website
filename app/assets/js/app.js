@@ -5,4 +5,4 @@ const Icons = require('uikit/dist/js/uikit-icons')
 UIkit.use(Icons);
 
 // Requiring custom code
-require('./master')
+require('./hello')
